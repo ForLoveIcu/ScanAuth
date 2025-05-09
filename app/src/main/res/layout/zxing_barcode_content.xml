@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 必须有这个控件！ -->
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/zxing_barcode_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 必须有这个控件！ -->
+    <com.journeyapps.barcodescanner.ViewfinderView
+        android:id="@+id/zxing_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 中间大字提示 -->
+    <TextView
+        android:id="@+id/tv_center_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="识别二维码"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="120dp"
+        android:background="#66000000"
+        android:padding="8dp"
+        />
+
+    <!-- 手电筒按钮 -->
+    <ImageButton
+        android:id="@+id/btn_flash"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_flash_off"
+        android:background="@null"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="手电筒"
+        android:padding="12dp"
+        android:tint="#FFFFFF"
+        android:stateListAnimator="@null"
+        />
+
+    <!-- 相册按钮 -->
+    <ImageButton
+        android:id="@+id/btn_gallery"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:background="@null"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="120dp"
+        android:layout_marginStart="120dp"
+        android:contentDescription="相册"
+        android:padding="12dp"
+        android:tint="#FFFFFF"
+        android:stateListAnimator="@null"
+        />
+</FrameLayout> 
